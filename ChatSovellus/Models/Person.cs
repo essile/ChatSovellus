@@ -31,6 +31,7 @@ namespace ChatSovellus.Models
 
         public byte[] Photo { get; set; }
 
+        //[Required]
         [StringLength(100)]
         public string Password { get; set; }
 
