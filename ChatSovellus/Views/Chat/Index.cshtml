@@ -1,0 +1,82 @@
+﻿@model IEnumerable<ChatSovellus.Models.Message>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Kirjaudu ulos", "Index", "Home")
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Subject)
+            </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.MessageText)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SendTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.From_Person_Id)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.PrivateMessage)
+            </th>*@
+        @*<th>
+                @Html.DisplayNameFor(model => model.To_Person_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExpireAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>*@
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Subject)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.MessageText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SendTime)
+            </td>
+            <td>
+
+                @Html.DisplayFor(modelitem => item.From_Person_Id)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.PrivateMessage)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.To_Person_Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExpireAt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>*@
+            <td>
+
+                @*@Html.ActionLink("Details", "Details", new { id=item.Message_Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.Message_Id })*@
+            </td>
+        </tr>
+    }
+
+</table>
+<div>
+   
+    @*@Html.Partial("_Kommentti")*@
+    
+</div>
