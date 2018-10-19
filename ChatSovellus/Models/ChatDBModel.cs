@@ -1,4 +1,4 @@
-namespace ChatSovellus.Models.ChatDB
+namespace ChatSovellus.Models
 {
     using System;
     using System.Data.Entity;
@@ -8,7 +8,7 @@ namespace ChatSovellus.Models.ChatDB
     public partial class ChatDBModel : DbContext
     {
         public ChatDBModel()
-            : base("name=ChatDBModel")
+            : base("name=ChatDBModel1")
         {
         }
 

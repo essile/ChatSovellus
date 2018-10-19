@@ -1,4 +1,4 @@
-namespace ChatSovellus.Models.ChatDB
+namespace ChatSovellus.Models
 {
     using System;
     using System.Collections.Generic;
